@@ -12,11 +12,15 @@
     $answer["回答3"] = "箱根";
     $answer["回答4"] = "東京";
   ?>
-  <h1><?php echo '問題　' . $question['問題'] ?><h1>
-  <p><?php
-    foreach($answer as $value) {
-      echo $value . '<br/>';
+  <h1><?php
+    foreach($question as $key=>$value) {
+      echo $key . '　' . $value;
     }
-  ?></p>
+  ?></h1>
+  <h2><?php
+    foreach($answer as $keys=>$values) {
+      echo $keys . '　' . $values . '<br/>';
+    }
+  ?></h2>
   </body>
 </html>
