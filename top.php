@@ -19,7 +19,7 @@
   ?></h1>
   <h2><?php
     foreach($answer as $keys=>$values) {
-      echo $keys . '　' . $values . '<br/>';
+      echo $keys . '　' . $values . '<br>';
     }
   ?></h2>
   </body>
